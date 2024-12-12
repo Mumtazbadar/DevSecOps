@@ -1,7 +1,3 @@
-provider "aws" {
-  region = "us-west-2"
-}
-
 # Security Group for SSH access
 resource "aws_security_group" "ssh_sg" {
   name        = "ssh-access-sg"
