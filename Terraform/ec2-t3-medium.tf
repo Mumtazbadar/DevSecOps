@@ -8,7 +8,7 @@ resource "aws_security_group" "ssh_sg" {
   ingress {
     from_port   = 22
     to_port     = 22
-    protocol    = "tcp/udp"
+    protocol    = "tcp"
     cidr_blocks = ["111.88.221.177/32"]  # Replace with your actual IP address
   }
 
