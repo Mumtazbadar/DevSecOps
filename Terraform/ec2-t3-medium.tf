@@ -29,7 +29,7 @@ resource "aws_key_pair" "key_pair" {
 
 # Launch EC2 Instance (t3.medium)
 resource "aws_instance" "example" {
-  ami           = "ami-0a91cd140a1fc148a"
+  ami           = "ami-055e3d4f0bbeb5878"
   instance_type = "t3.medium"
   key_name      = aws_key_pair.key_pair.key_name
   security_groups = [aws_security_group.ssh_sg.name]
